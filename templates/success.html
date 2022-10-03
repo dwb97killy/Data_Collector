@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Data Collector Web</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Thank you for your participation!</h1>
+        <p>You will receive an email with the survey results shortly.</p>
+        <br/>
+        <p id="warning">{{text}}</p>
+      </div>
+      {% include btn ignore missing%}
+    </header>
+  </body>
+</html>
